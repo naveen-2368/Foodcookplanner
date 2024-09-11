@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(193, 223, 201);
+  letter-spacing: auto;
+}
+
+main {
+  text-align: center;
+  width: 60%;
+  position: relative;
+  left: 20%;
+}
+main > div {
+  font-size: 14px;
+}
+
+header {
+  /* display: flex; */
+  padding: 30px;
+  /* height: 80px; */
+  width: 100%;
+  text-align: center;
+  /* justify-content: center; */
+  background-color: blue;
+  color: white;
+  font-size: 30px;
+}
+
+.input {
+  padding: 10px 20px;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  background-color: rgba(107, 97, 97, 0.219);
+}
+
+#input-btn {
+  padding: 10px 20px;
+  margin-left: 20px;
+  background-color: rgb(252, 168, 13);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.head {
+  display: flex;
+  background-color: aliceblue;
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(59, 56, 56);
+}
+
+#food-container {
+  list-style: none;
+  /* margin: 10px; */
+  /* padding: 10px 20px; */
+  /* background-color: aliceblue; */
+  /* box-shadow: 5px 5px 5px rgb(58, 55, 55); */
+  border-radius: 10px;
+}
+
+#food-container .food-item {
+  padding: 10px 10px;
+  color: gray;
+  border: none;
+  font-size: 14px;
+  /* border: 1px solid rgb(0, 0, 0); */
+  margin: 10px 0px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+
+  /* color: #fff; */
+}
+#food-container .food-item:hover {
+  background-color: rgba(0, 0, 0, 0.76);
+  color: white;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.alert {
+  padding: 10px 20px 10px 10px;
+  background-color: #29a746;
+  margin: 10px 0px;
+  color: #fff;
+  border-radius: 5px;
+  text-align: left;
+  border-left: 5px solid green;
+  display: flex;
+  justify-content: space-between;
+}
+
+.alert button {
+  background: transparent;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+}
+
+.check {
+  padding: 5px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: rgba(211, 193, 193, 0.527);
+  /* border: none; */
+}
+
+/* .input-name-container {
+  list-style: none;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 5px rgb(58, 55, 55);
+  border-radius: 10px;
+
+  transition: all 1s;
+  width: 100%;
+}
+
+.input-name-container.hide {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-color: chartreuse;
+  overflow: hidden;
+} */
+
+section{
+  margin: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px ;
+  padding: 20px;
+}
+#nolist{
+  font-size: 17px;
+  color: gray;
+}

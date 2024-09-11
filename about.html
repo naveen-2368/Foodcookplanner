@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      table {
+        position: absolute;
+        left: 30%;
+        margin-top: 20px;
+      }
+      tr:first-child {
+        background-color: blue;
+        color: white;
+        border-spacing: 0;
+        margin: 20px auto;
+      }
+      table,
+      th,
+      td {
+        padding: 5px 15px;
+        font-size: 15px;
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      tr.active {
+        background-color: rgba(240, 105, 195, 0.822);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      Foodcook Planner
+      <span style="font-size: 14px; cursor: pointer"
+        ><a href="./index.html" style="color: #fff; text-decoration: none"
+          >index</a
+        ></span
+      >
+    </header>
+
+    <main>
+      <br />
+      <h3>About authors</h3>
+
+      <table id="table">
+        <tr>
+          <th>Name</th>
+          <th>linkdin</th>
+          <th>project</th>
+        </tr>
+        <tr>
+          <td>Naveen</td>
+          <td>naveen@123</td>
+          <td>header</td>
+        </tr>
+        <tr>
+          <td>anbu</td>
+          <td>anbu@123</td>
+          <td>main</td>
+        </tr>
+        <tr>
+          <td>akil</td>
+          <td>akil@123</td>
+          <td>footer</td>
+        </tr>
+      </table>
+      <br />
+      <br />
+
+      <!-- donatepage -->
+
+      <div style="position: absolute; top: 200px; left: 200px">
+        <button
+          style="padding: 5px 15px; margin: 10px"
+          data-toggle-id="donate-form"
+        >
+          Donate as you can
+        </button>
+        <form id="donate-form" hidden>
+          <div>
+            <span style="font-family: Arial, Helvetica, sans-serif">₹</span>
+            <input
+              type="number"
+              min="1"
+              placeholder="20"
+              style="padding: 5px 15px"
+            />
+            <button
+              style="
+                padding: 5px 15px;
+                background-color: blue;
+                color: white;
+                border-radius: 5px;
+              "
+            >
+              Donate
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- donatepage ends -->
+    </main>
+
+    <script src="study.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

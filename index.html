@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body oncontextmenu="return false">
+    <header>
+      Foodcook Planner
+      <span style="font-size: 14px; cursor: pointer"
+        ><a href="./about.html" style="color: white; text-decoration: none"
+          >credits</a
+        ></span
+      >
+
+      <span style="font-size: 14px; cursor: pointer"
+        ><a href="./feedback.html" style="color: white; text-decoration: none"
+          >Feedback</a
+        ></span
+      >
+    </header>
+
+    <main id="main">
+      <!-- <div class="alert">
+        <div class="alert-message">
+          <strong>✔ Suceessful </strong> Food is updated !
+        </div>
+        <div>
+          <button type="button">x</button>
+        </div>
+      </div> -->
+      <div class="head">
+        <input
+          class="input"
+          id="input-food"
+          type="text"
+          placeholder="your favorite food ..."
+        />
+        <button id="input-btn">Save</button>
+      </div>
+
+      <div class="out">
+
+        <section>
+        <ul id="food-container" class="food-container">
+        
+        </ul>
+        <br />
+
+        <div id="nolist">
+          <img src="bgimage.jpeg" alt="">
+          <h5>create your food items.</h5>
+        </div>
+      </section>
+
+        <!-- <form action="" id="food-container">
+          <div>
+            <input
+              type="text"
+              placeholder="fullname"
+              style="padding: 5px 10px; margin: 10px"
+            />
+          </div>
+
+          <div>
+            <label for="terms" style="font-size: 11px">
+              <input type="checkbox" id="terms" /> i accept the
+              <a href="https://google.com" onclick="return false"
+                >terms and condition</a
+              >
+            </label>
+          </div>
+
+          <div>
+            <button
+              style="
+                padding: 5px 10px;
+                margin: 10px;
+                background-color: blue;
+                color: white;
+                border: none;
+                border-radius: 5px;
+              "
+            >
+              submit
+            </button>
+          </div>
+        </form> -->
+
+        <!-- <button
+          class="showbtn"
+          type="button"
+          style="
+            margin: 10px;
+            font-size: 14px;
+            float: right;
+            padding: 2px 10px;
+            background-color: gray;
+            border-radius: 5px;
+          "
+        >
+          Hide Div
+        </button> -->
+
+        <!-- <div class="input-name-container" id="input-name-container">
+          <input
+            type="text"
+            class="check"
+            id="nameid"
+            name="fullname"
+            value=""
+            placeholder="fullname"
+            isAlive="yes"
+            place="erode"
+            hobby="coding"
+          />
+          <button>submit</button>
+        </div> -->
+      </div>
+      <br />
+      <!-- <button id="Resync">Resync</button> -->
+      <div id="duplicate"></div>
+    </main>
+    <!-- <script src="study.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>

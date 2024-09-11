@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS DOM</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      form {
+        background-color: #fff;
+        padding: 30px;
+        margin: 20px;
+        border-radius: 5px;
+      }
+      form * {
+        margin: 5px;
+        width: 100%;
+      }
+      form input,
+      textarea {
+        padding: 10px 15px;
+        font-size: 13px;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      form button {
+        padding: 5px 15px;
+        background-color: rgb(0, 64, 255);
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+      }
+      form label {
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        color: black;
+        user-select: none;
+      }
+      .d-flex {
+        display: flex;
+      }
+      form label input,
+      form input[type="radio"] {
+        width: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      Foodcook Planner
+      <span style="font-size: 14px; cursor: pointer"
+        ><a href="./index.html" style="color: #fff; text-decoration: none"
+          >index</a
+        ></span
+      >
+    </header>
+
+    <main>
+      <br />
+      <h3>Feedback Form</h3>
+
+      <form name="feedback">
+        <div class="d-flex">
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Enter your Name"
+            required
+          />
+        </div>
+        <div class="d-flex" required>
+          <div class="d-flex">
+            <input
+              type="radio"
+              name="type"
+              id="general feedback"
+              value="general feedback"
+            />
+            <label for="general feedback">General Feedback</label>
+          </div>
+          <div class="d-flex">
+            <input
+              type="radio"
+              name="type"
+              id="technical support"
+              value="technical support"
+            />
+            <label for="technical support">Technical support</label>
+          </div>
+          <div class="d-flex">
+            <input
+              type="radio"
+              name="type"
+              id="contribution"
+              value="contribution"
+            />
+            <label for="contribution">contribution</label>
+          </div>
+        </div>
+
+        <div>
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <div>
+          <textarea
+            placeholder="Enter your Feedback Breifly!"
+            name="desc"
+            style="margin-top: 20px"
+            rows="6"
+            required
+          ></textarea>
+        </div>
+
+        <div>
+          <label for="terms">
+            <input type="checkbox" name="terms" id="terms" required />
+            I accept terms and conditions
+          </label>
+        </div>
+
+        <div>
+          <button>Submit</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="study.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
